@@ -1,10 +1,9 @@
 html{
-    margin-top: 4%;
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 80%;
+    margin-top: 2%;
+    margin-left: 13%;
+    margin-right: 13%;
+    height: 90%;
 }
-
 body{
     margin: 0px;
     height: 100%;
@@ -15,7 +14,6 @@ body{
     height: 100%;
     width: 100%;
 }
-
 #side-menu{
     display: flex;
     flex-direction: column;
@@ -69,7 +67,7 @@ body{
 
 #header-bar{
     width: 85%;
-    background-color: blue;
+    background-color:whitesmoke;
     display: flex;
     flex-direction: column;
 }
@@ -98,5 +96,31 @@ body{
     margin: .2em 0.2em;
     color: black;
     border: none;
+    border-radius: 0.2em;
+}
+
+#search-button:focus{
+}
+
+#user-list{
+    background-color: white;
+    margin: 1em 1em;
+    overflow-y: auto;
+}
+
+#user-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:1em;
+    padding-right: 1em;
+}
+
+#add-user-button{
+    color: white;
+    background-color: #6629ea;
+    font-size: 0.75em;
+    padding: 0em 1.75em;
+    margin: 1.25em 0em;
     border-radius: 0.2em;
 }
