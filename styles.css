@@ -1,0 +1,58 @@
+html{
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 80%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+#ui-mainpart{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#side-menu{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 100%;
+    background-color: #25282d;
+    color: white;
+}
+
+#menu-title{
+    display: flex;
+}
+
+#title-name{
+    padding-left: 0.5em;
+}
+
+#user-status{
+    padding-left: .5em;
+    display: flex;
+    margin-top: 1.7em;
+    margin-left: 0.5em;
+    margin-bottom: 1.7em;
+    padding-right: 0.5em;
+    font-size: 1em;
+    background-color: #6e4bd3;
+    border-radius: .2em;
+}
+
+#menu-options ul{
+    padding-inline-start: 10%;
+}
+
+.menu-option{
+    height: 3em;
+    list-style-type: none;
+}
+
+
+
