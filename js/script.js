@@ -116,14 +116,14 @@ var users=[
         email:"ajusanas11@gmail.com",
         status:"Active",
         role:"User",
-        lastLogin:"3d ago",
+        lastLogin:"2d ago",
         permisiion:"Valid"
     }, {
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Inactive",
         role:"User",
-        lastLogin:"2d ago",
+        lastLogin:"-",
         permisiion:"Valid"
     },{
         name: "Ryan Larson",

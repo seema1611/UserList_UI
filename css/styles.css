@@ -64,7 +64,7 @@ button:hover{
     margin-bottom: 1.7em;
     padding-right: 0.5em;
     font-size: 1em;
-    background-color: #6e4bd3;
+    background-color:  rgb(181, 18, 231);;
     border-radius: .2em;
 }
 
@@ -201,7 +201,7 @@ button:hover{
 
 #add-user-button{
     color: white;
-    background-color: #6629ea;
+    background-color:  rgb(181, 18, 231);;
     font-size: 0.75em;
     padding: 0em 1.75em;
     margin: 1.25em 0em;
@@ -290,7 +290,7 @@ button:hover{
 
 .name{
     min-width: 20%;
-    color: blue;
+    color: rgb(181, 18, 231);
 }
 
 .email{
@@ -314,15 +314,19 @@ button:hover{
     color: rgba(100, 94, 94, 0.979);
     border: rgba(100, 94, 94, 0.979) 1px solid;
 }
+
 .role{
     min-width: 10%;
 }
+
 .last-login{
     min-width: 10%;
 }
+
 .permission{
     min-width: 10%;
 }
+
 .option{
     justify-content: flex-end;
     font-size: 1em;
