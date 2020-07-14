@@ -218,11 +218,12 @@ button:hover{
     margin: 0.5em 0em;
     border: gray 1px solid;
 }
+
 .user-search-placeholder-text{
     margin-left: auto;
     padding: 0.5em 1em;
     font-size: medium;
-    width: 100%;
+    width: 95%;
     font-size: 0.8em;
     border: none;
 }
@@ -325,6 +326,18 @@ button:hover{
 
 .permission{
     min-width: 10%;
+}
+
+.permission-valid{
+    width: 70%;
+    padding-left: 0.5em;
+    color: black;
+}
+
+.permission-invalid{
+    width: 70%;
+    padding-left: 0.5em;
+    color: rgba(100, 94, 94, 0.979);
 }
 
 .option{

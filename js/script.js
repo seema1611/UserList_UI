@@ -10,7 +10,7 @@ var users=[
         name: "Ryan Larson",
         email:"ryanlarson11@gmail.com",
         status:"Active",
-        role:"Administrator",
+        role:"User",
         lastLogin:"1d ago",
         permisiion:"Valid"
     },{
@@ -19,7 +19,7 @@ var users=[
         status:"Active",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permisiion:"Invalid"
     },{
         name: "Aju Sanas",
         email:"ajusanas11@gmail.com",
@@ -31,14 +31,14 @@ var users=[
         name: "Bhakti Arde",
         email:"bhaktiarde29@gmail.com",
         status:"Active",
-        role:"Administrator",
+        role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Active",
-        role:"Administrator",
+        role:"User",
         lastLogin:"1d ago",
         permisiion:"Valid"
     },{
@@ -47,12 +47,12 @@ var users=[
         status:"Inactive",
         role:"User",
         lastLogin:"-",
-        permisiion:"Valid"
+        permisiion:"Invalid"
     },{
         name: "Aju Sanas",
         email:"ajusanas11@gmail.com",
         status:"Active",
-        role:"User",
+        role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     }, {
@@ -94,9 +94,9 @@ var users=[
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Active",
-        role:"Administrator",
+        role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permisiion:"Invalid"
     },{
         name: "Aishu Kaware",
         email:"aishu14@gmail.com",
@@ -117,7 +117,7 @@ var users=[
         status:"Active",
         role:"User",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permisiion:"Invalid"
     }, {
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
@@ -154,9 +154,15 @@ var users=[
             userList+="<div class=\"status list-column\"><div class=\"status-inactive\">"+users[i].status+"</div> </div>\n";
         }
         userList+="<div class=\"role list-column\">"+users[i].role+"</div>\n"+
-        "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n"+
-        "<div class=\"permission list-column\">"+users[i].permisiion+"</div>\n"+
-        "<button class=\"option list-column\">...</button>\n"+
+        "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n";
+
+        console.log(users[i].permisiion);
+        if(users[i].permisiion.match("Valid")){
+            userList+="<div class=\"permission list-column\"><div class=\"permission-valid\">"+users[i].permisiion+"</div> </div>\n";
+        }else{
+            userList+="<div class=\"permission list-column\"><div class=\"permission-invalid\">"+users[i].permisiion+"</div> </div>\n";
+        }
+        userList+="<button class=\"option list-column\">...</button>\n"+
         "</div>";
     }
 
