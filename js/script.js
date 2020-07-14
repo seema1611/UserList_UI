@@ -11,14 +11,14 @@ var users=[
         email:"ryanlarson11@gmail.com",
         status:"Active",
         role:"Administrator",
-        lastLogin:"2d ago",
+        lastLogin:"1d ago",
         permisiion:"Valid"
     },{
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Active",
         role:"User",
-        lastLogin:"2d ago",
+        lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Aju Sanas",
@@ -32,21 +32,21 @@ var users=[
         email:"bhaktiarde29@gmail.com",
         status:"Active",
         role:"Administrator",
-        lastLogin:"2d ago",
+        lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Active",
         role:"Administrator",
-        lastLogin:"2d ago",
+        lastLogin:"1d ago",
         permisiion:"Valid"
     },{
         name: "Aishu Kaware",
         email:"aishu14@gmail.com",
         status:"Inactive",
         role:"User",
-        lastLogin:"3d ago",
+        lastLogin:"-",
         permisiion:"Valid"
     },{
         name: "Aju Sanas",
@@ -67,14 +67,14 @@ var users=[
         email:"ryanlarson11@gmail.com",
         status:"Active",
         role:"Administrator",
-        lastLogin:"2d ago",
+        lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Seema Rajpure",
         email:"seema16@gmail.com",
         status:"Inactive",
         role:"User",
-        lastLogin:"2d ago",
+        lastLogin:"-",
         permisiion:"Valid"
     },{
         name: "Aju Sanas",
@@ -95,11 +95,18 @@ var users=[
         email:"seema16@gmail.com",
         status:"Active",
         role:"Administrator",
-        lastLogin:"2d ago",
+        lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Aishu Kaware",
         email:"aishu14@gmail.com",
+        status:"Active",
+        role:"User",
+        lastLogin:"-",
+        permisiion:"Valid"
+    },{
+        name: "Aju Sanas",
+        email:"ajusanas11@gmail.com",
         status:"Active",
         role:"User",
         lastLogin:"3d ago",
@@ -109,14 +116,7 @@ var users=[
         email:"ajusanas11@gmail.com",
         status:"Active",
         role:"User",
-        lastLogin:"2d ago",
-        permisiion:"Valid"
-    },{
-        name: "Aju Sanas",
-        email:"ajusanas11@gmail.com",
-        status:"Active",
-        role:"User",
-        lastLogin:"2d ago",
+        lastLogin:"3d ago",
         permisiion:"Valid"
     }, {
         name: "Seema Rajpure",
