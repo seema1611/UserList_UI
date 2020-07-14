@@ -184,7 +184,7 @@ button:hover{
 
 #user-list{
     box-shadow: 20px 20px 20px 20px lightgray ;
-    min-height: 91%;
+    min-height: 91.8%;
     overflow-y: auto;
     background-color: white;
     margin: 4%;
@@ -287,28 +287,32 @@ button:hover{
 .list-column{
     padding-left: 1em;
 }
+
 .name{
     min-width: 20%;
+    color: blue;
 }
+
 .email{
     min-width: 20%;
 }
+
 .status{
     min-width: 10%;
 }
 
 .status-active{
-    width: 50%;
+    width: 60%;
     padding-left: 0.5em;
-    color: green;
-    border: green 1px solid;
+    color: rgba(5, 229, 245);
+    border: rgb(5, 229, 245) 1px solid;
 }
 
 .status-inactive{
-    width: 60%;
+    width: 70%;
     padding-left: 0.5em;
-    color: gray;
-    border: gray 1px solid;
+    color: rgba(100, 94, 94, 0.979);
+    border: rgba(100, 94, 94, 0.979) 1px solid;
 }
 .role{
     min-width: 10%;
