@@ -1,9 +1,8 @@
 html{
     margin-top: 2%;
-    margin-left: 13%;
-    margin-right: 13%;
     height: 90%;
 }
+
 body{
     margin: 0px;
     height: 100%;
@@ -14,6 +13,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
 #side-menu{
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ body{
 }
 
 #user-status{
-    padding-left: .5em;
+    padding-left: 0.5em;
     display: flex;
     margin-top: 1.7em;
     margin-left: 0.5em;
@@ -48,6 +48,8 @@ body{
 }
 
 .menu-option{
+    margin-right: 10%;
+    margin-top: 10%;
     height: 3em;
     list-style-type: none;
 }
@@ -88,6 +90,9 @@ body{
 
 #placeholder-search{
     padding: 0.5em 1em;
+    width: 100%;
+    font-size: medium;
+    border: none;
 }
 
 #search-button{
@@ -126,16 +131,21 @@ body{
 }
 
 #user-search{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin: 0.5em 0em;
     border: gray 1px solid;
 }
 
+#placeholder-user-search{
+    width: 90%;
+}
+
 #placeholder-user-search-text{
+    padding: 0.5em 1em;
     width: 100%;
-    font-size: 1em;
+    font-size: medium;
     border: none;
 }
 
