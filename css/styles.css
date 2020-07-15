@@ -1,7 +1,5 @@
 html{
-    margin-left: 4%;
-    margin-right: 4%;
-    height: 90%;
+    height: 100%;
 }
 
 body{
@@ -13,6 +11,7 @@ body{
 input[type="text" i] {
     font-family: 'Roboto', sans-serif;
 }
+
 button{
     font-family: 'Roboto', sans-serif;
 }
@@ -20,16 +19,18 @@ button{
 button:hover{
     cursor: pointer;
 }
+
 #app-ui{
     display: flex;
     height: 100%;
     width: 100%;
 }
+
 #side-menu{
     display: flex;
     flex-direction: column;
     width: 15%;
-    min-height: 94.4%;
+    min-height: 100%;
     background-color: #25282d;
     color: white;
     position: fixed;
@@ -72,12 +73,13 @@ button:hover{
     margin-bottom: 1.7em;
     padding-right: 0.5em;
     font-size: 1em;
-    background-color:  rgb(181, 18, 231);;
+    background-color: rgb(181, 18, 231);
     border-radius: .2em;
 }
 
 #menu-options ul{
     padding-inline-start: 0%;
+    margin-block-start: 0em;
 }
 
 .menu-option{
@@ -87,22 +89,29 @@ button:hover{
 
 .sub-menu-option{
     width: 100%;
-    height: 2em;
-    padding: 0.35em 0em;
+    height: 3em;
+    padding: 0em 0em;
 }
 
 .side-menu-sub-button{
     width: 100%;
     height: 100%;
-    padding-left: 4em;
+    padding-left: 3.2em;
     text-align: left;
     margin: 0%;
-    color: white;   
-    background-color: #25282d;
+    color: white; 
+    background-color: inherit;  
     border: none;
 }
 #sub-menu-authentication{
     display: none;
+}
+
+.menu-button-highlight{
+    background-color: #363b41;
+}
+.menu-button-extra-highlight{
+    background-color: #484c55;
 }
 
 .side-menu-sub-button:hover{
@@ -134,16 +143,22 @@ button:hover{
 #user-details{
     margin-left: auto;
     margin-right: 1em;
-    background-color: #25282d;
+    background-color: inherit;
     color: white;
     border: none;
     font-size: 1em;
 }
+
 #user-details:hover{
-    color: #6e4bff;
+    color: #555555;
 }
+
 #user-details:focus{
     outline: none;
+}
+
+#user-name{
+    font-weight: 400;
 }
 
 #list{
@@ -155,16 +170,17 @@ button:hover{
 }
 
 #search-bar{
-    width: 91.5%;
     background-color: white;
     padding: 0.5em 1.5em;
-    box-shadow: 20px 20px 20px 20px lightgray ;
+    box-shadow:10px 5px 15px 10px lightgrey ; 
+    position: fixed;
+    max-width: 100%;
+    width: 82%;
 }
 
 #search-field{
     background-color: white;
-    margin-left: 3%;
-    border: gray 1px solid;
+    border: #dddddd 1px solid;
     display: flex;
     justify-content: space-between;
     border-radius: 0.2em;
@@ -191,14 +207,14 @@ button:hover{
 }
 
 #user-list{
-    box-shadow: 20px 20px 20px 20px lightgray ;
-    min-height: 91.8%;
-    overflow-y: auto;
     background-color: white;
-    margin: 4%;
-    margin-top: 2%;
-    padding-left:4%;
-    padding-right: 4%;
+    margin: 1em 1em;
+    margin-top: 5em;
+    padding-left:1em;
+    padding-right: 1em;
+    display: none;
+    border: #dddddd 1px solid;
+    box-shadow: 5px 5px 20px 5px #dddddd;
 }
 
 #user-number{
@@ -209,14 +225,19 @@ button:hover{
 
 #add-user-button{
     color: white;
-    background-color:  rgb(181, 18, 231);;
+    background-color:  rgb(181, 18, 231);
     font-size: 0.75em;
     padding: 0em 1.75em;
     margin: 1.25em 0em;
     border-radius: 0.2em;
 }
+
 #add-user-button:hover{
     background-color: #dee6e9;
+}
+
+#add-user-button:focus{
+    outline: none;
 }
 
 #user-search{
@@ -224,15 +245,11 @@ button:hover{
     display: flex;
     justify-content: space-between;
     margin: 0.5em 0em;
-    border: gray 1px solid;
+    border: #dddddd 1px solid;
 }
-
 .user-search-placeholder-text{
-    margin-left: auto;
-    padding: 0.5em 1em;
-    font-size: medium;
-    width: 95%;
-    font-size: 0.8em;
+    width: 100%;
+    font-size: 1em;
     border: none;
 }
 
@@ -261,9 +278,18 @@ button:hover{
     border: none;
     border-radius: 0.2em;
 }
+
 #user-search-button:hover{
     background-color: #dee6e9;
     color: white;
+}
+
+#user-search-button:focus{
+    outline: none;
+}
+#user-search-button:active{
+    position: relative;
+    top:1px;
 }
 
 .user-list-icon{
@@ -275,9 +301,22 @@ button:hover{
 #user-list-details{
     margin-top: 2em;
     margin-bottom: 1em;
-    width: 120%;
+    min-width: 100%;
+    border-bottom: #dddddd 1px solid;
+}
+.user-list-head{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+}
+
+#user-list-details{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 100%;
     border-bottom: gray 1px solid;
 }
+
 .user-list-head{
     display: flex;
     flex-direction: row;
@@ -288,9 +327,9 @@ button:hover{
     display: flex;
     flex-direction: row;
     padding: 0.5em 0em;
-    border-right: gray 1px solid;
-    border-left: gray 1px solid;
-    border-top: gray 1px solid;
+    border-right: #dddddd 1px solid;
+    border-left: #dddddd 1px solid;
+    border-top: #dddddd 1px solid;
 }
 
 .list-column{
@@ -298,16 +337,15 @@ button:hover{
 }
 
 .name{
-    min-width: 18%;
+    min-width: 20%;
     color: rgb(181, 18, 231);
 }
 
 .email{
-    min-width: 21%;
+    min-width: 20%;
 }
-
 .status{
-    min-width: 8%;
+    min-width: 10%;
 }
 
 .status-active{
@@ -322,7 +360,7 @@ button:hover{
 }
 
 .status-inactive{
-    width: 70%;
+    width: 60%;
     padding-left: 0.5em;
     color: rgba(100, 94, 94, 0.979);
     border: rgba(100, 94, 94, 0.979) 1px solid;
@@ -356,6 +394,7 @@ button:hover{
     padding-left: 0.5em;
     color: rgba(100, 94, 94, 0.979);
 }
+
 .option{
     justify-content: flex-end;
     font-size: 1em;
@@ -367,4 +406,9 @@ button:hover{
     background-color: white;
     border: none;
     font-weight: bold ;
+}
+
+
+@media screen and (max-width:1300px) and (min-width:360px) {
+    background:blue
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <title>User List UI</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" role="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>UserList UI</title>
+    </head>
 <body>
     <div id="app-ui">
         <div id="side-menu">
@@ -14,23 +14,25 @@
                 <h2 id="app-name">Cuddle</h2>
                 <div id="user-status">ADMIN</div>
             </div>
+
             <div id="menu-options">
                 <ul>
+
                     <li class="menu-option"><button class="side-menu-button"><i class="fa fa-server"  style="font-size:24px; margin-right: 10%;"></i>Transaction</button></li>
                     <li class="menu-option"><button class="side-menu-button"><i class="fa fa-gear" style="font-size:24px; margin-right: 10%;"></i>System Setting</button></li>
                     <li class="menu-option"><button class="side-menu-button"><i class="fa fa-question-circle" style="font-size:24px; margin-right: 10%;"></i>Suggested Question</button></li>
-                    <li class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="fa fa-lock" style="font-size:24px; margin-right: 10%;"></i>Authentication</button></li>
+                    <li id="authentication-menu-button" class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="fa fa-lock" style="font-size:24px; margin-right: 10%;"></i>Authentication</button></li>
                     <div id="sub-menu-authentication" class="sub-menu-list" >
-                        <ul class="sub-menu">
-                            <li class="sub-menu-option"><button class="side-menu-sub-button">Users</button></li>
+                        <ul class="menu-button-highlight sub-menu ">
+                            <li id="users-sub-button" class="sub-menu-option"><button onclick="showUsers()" class="side-menu-sub-button">Users</button></li>
                             <li class="sub-menu-option"><button class="side-menu-sub-button">Groups</button></li>
                             <li class="sub-menu-option"><button class="side-menu-sub-button">Permissions</button></li>
                         </ul>
                     </div>
                 </ul>
             </div>
-            <div id="menu-user">
-                <img src="images/icon.png" class="user-picture">
+            <div id="menu-user" class="menu-button-highlight">
+                <img src="assets/icon.png" class="user-picture">
                 <h4 id="user-name">Ryan Larson</h4>
                 <button id="user-details">></button>
             </div>
@@ -46,15 +48,17 @@
             </div>
             <div id="user-list">
                 <div id="user-number">
-                    <h2 id="user-count"><b>Users(20)</b></h2>
+                    <h2 id="user-count">Users(20)</h2>
                     <button id="add-user-button">+ ADD NEW</button>
                 </div>
+
                 <div id="user-search">
                     <div id="user-search-placeholder">
-                        <input class="user-search-placeholder-text" type="text" placeholder="Search UserName,Email,Status,Role">
+                        <input id="user-search-mini" class="user-search-placeholder-text" type="text" placeholder="Search UserName,Email,Status,Role">
                     </div>
-                    <button id="user-search-button"><img src="images/search.png" width="24px" height="24px" class="user-picture-search"></button>
+                    <button id="user-search-button"><img src="assets/search.png" width="24px" height="24px" class="user-picture-search"></button>
                 </div>
+
                 <div id="user-list-details">
                     <div class="user-list-head">
                         <div class="name list-column">Name</div>
@@ -64,6 +68,9 @@
                         <div class="last-login list-column">Last Login</div>
                         <div class="permission list-column">Permission</div>
                         <div class="option list-column"></div>
+                    </div>
+                    <div id="user-list-items">
+                        
                     </div>
                 </div>
             </div>
