@@ -1,12 +1,20 @@
 html{
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
     height: 90%;
 }
 
 body{
     margin: 0px;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text" i] {
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover{
@@ -267,7 +275,7 @@ button:hover{
 #user-list-details{
     margin-top: 2em;
     margin-bottom: 1em;
-    min-width: 100%;
+    width: 120%;
     border-bottom: gray 1px solid;
 }
 .user-list-head{
@@ -290,16 +298,16 @@ button:hover{
 }
 
 .name{
-    min-width: 20%;
+    min-width: 18%;
     color: rgb(181, 18, 231);
 }
 
 .email{
-    min-width: 20%;
+    min-width: 21%;
 }
 
 .status{
-    min-width: 10%;
+    min-width: 8%;
 }
 
 .status-active{
@@ -309,11 +317,19 @@ button:hover{
     border: rgb(5, 229, 245) 1px solid;
 }
 
+.status-active:hover{
+    background-color: rgb(72, 241, 4);
+}
+
 .status-inactive{
     width: 70%;
     padding-left: 0.5em;
     color: rgba(100, 94, 94, 0.979);
     border: rgba(100, 94, 94, 0.979) 1px solid;
+}
+
+.status-inactive:hover{
+    background-color: #e20505;
 }
 
 .role{
@@ -332,6 +348,7 @@ button:hover{
     width: 70%;
     padding-left: 0.5em;
     color: black;
+    font-style: bolder;
 }
 
 .permission-invalid{
@@ -339,7 +356,6 @@ button:hover{
     padding-left: 0.5em;
     color: rgba(100, 94, 94, 0.979);
 }
-
 .option{
     justify-content: flex-end;
     font-size: 1em;
