@@ -410,6 +410,51 @@ button:hover{
 }
 
 
-@media screen and (max-width:1300px) and (min-width:360px) {
-    background:blue
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+    #app-ui{
+        display: inline;
+    }
+    #side-menu{
+        position: relative;
+        width: 100%;
+        min-height: 10%;
+    }
+    #app-name {
+        padding-left: 1em;
+        font-size: 4em;
+    }
+    
+    #user-status{  
+        font-size: 3em;
+        margin-top: 1.4em;
+    }
+    
+    .menu-option{
+        height: auto;
+    }
+    
+    #side-menu-bottom{
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .side-menu-button{
+        padding: 0.5em 1em;
+        font-size: 4em;
+    }
+    
+    .sub-menu-option{
+        height: auto;
+    }
+    
+    .side-menu-sub-button{
+        padding: 0.5em 3.2em;
+        font-size: 3em;
+    }
+    
+    .side-menu-button i::before{
+        font-size: 1em;
+    }
+
 }
